@@ -11,31 +11,29 @@
   font-weight: 200;
   display: inline-block;
   transform: rotateY(180deg);
+  letter-spacing: 1px;
 }
 
 h2 {
   font-weight: 600;
 }
 
-.line-about-section,
 .line-project-section,
 .line-contact-section {
   border: 2px solid #1fb3bb;
-  width: 90%;
   height: 0;
   border-radius: 50px;
   box-shadow: 0px 0px 10px #308c91;
-  position: relative;
 }
 
 .line-project-section,
 .line-contact-section {
-  width: 60%;
-  align-self: flex-end;
+  width: 60dvw;
+  align-self: center;
 }
 
 body {
-  background-color: #2b3333;
+  background-color: #131b1b;
 }
 
 .banner {
@@ -48,12 +46,10 @@ body {
     rgba(31, 179, 187, 1) 100%
   );
   width: 100dvw;
-  height: 6rem; /* change for desktop version */
+  height: 20dvh; /* 6rem init*/
 
   /* test of position*/
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: relative;
 }
 
 /* section header */
@@ -102,47 +98,62 @@ li a span {
 
 /* section main about*/
 
-#about {
-  position: relative;
+main {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-  padding-left: 1rem;
-  margin-bottom: 2rem;
+}
+
+#about {
+  position: relative;
+  margin-bottom: 5rem;
+}
+
+.sub-about {
+  width: 90dvw;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
 }
 
 .profile-foto {
-  position: relative;
-  top: 0.5rem;
-  height: 5.5rem;
-  width: 4rem;
+  height: inherit;
+  width: auto;
 }
 
 .about-text {
-  position: relative;
-  width: 90%;
-  font-size: 1.1rem;
+  font-size: clamp(1.1rem, 4vw + 0.1rem, 1.8rem);
   color: #00d3de;
   font-weight: 200;
   line-height: 1.7rem;
   text-align: center;
+  margin: auto;
+  margin-top: 1rem;
+  padding: 0.5rem;
+
+  background-color: #2b3333;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px #308c91;
 }
 
 .about-skills {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  width: 90%;
   gap: 1rem;
   color: #00d3de;
   font-weight: 200;
   text-align: center;
+  margin: auto;
+  padding-top: 1rem;
+  width: 100%;
+  height: 100%;
 }
 
 .tech-skills,
 .soft-skills {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   gap: 0.2rem;
   border-bottom: 1px solid #00d3de;
@@ -150,6 +161,12 @@ li a span {
   border-radius: 6px;
   box-shadow: -1px 11px 6px #308c91;
   padding: 0.3rem;
+
+  height: 50%;
+
+  background-color: #2b3333;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px #308c91;
 }
 
 .tech-skills ul,
@@ -158,7 +175,7 @@ li a span {
   flex-wrap: wrap;
   gap: 0.3rem;
   justify-content: space-evenly;
-  width: 12rem;
+  height: min-content;
 }
 
 .tech-skills ul li {
@@ -169,65 +186,79 @@ li a span {
 }
 
 .tech-skills ul li img {
-  width: 1.8rem;
+  height: 3dvh;
+  width: auto;
 }
 
 /* section main projects*/
 
 #projects {
-  position: relative;
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  padding-left: 1rem;
-  margin-bottom: 2rem;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 5rem;
+  padding-bottom: 2rem;
+
+  background-color: #2b3333;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px white;
 }
 
 .projects-header {
   display: flex;
   height: 5dvh;
   align-items: center;
-  gap: 0.5rem;
+  gap: 1.5rem;
+  padding: 2rem;
+
+  background-color: #2b3333;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px white;
 }
 
 .projects-header h2 {
-  border-top: 1px solid #308c91;
-  border-left: 1px solid #308c91;
+  color: #00d3de;
+  font-size: clamp(1rem, 3vw + 1rem, 3rem);
   border-radius: 5px 0;
-  box-shadow: -5px -6px 3px #308c91;
 }
 
 /* section cards projects*/
 
 #projects ul {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 0.7rem;
+  padding: 0 0.5rem 2rem;
 }
 
 .card-project {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 95%;
+  width: 100%;
   gap: 0.5rem;
-  box-shadow: 0px 0px 8px #0092e6;
+  box-shadow: 0px 0px 8px #00d3de;
   border-radius: 4px;
-  padding: 0.5rem;
-  background-color: #009199;
+  padding: 0.5rem 0;
+  background-color: #2b3333;
+  color: #00d3de;
 }
 
 .card-thumb {
-  border: 1px solid red;
+  border-radius: 3px;
+  box-shadow: 0px 0px 8px white;
   width: 80%;
+  height: 150px;
 }
 
 .card-title {
   font-weight: 700;
-  box-shadow: 0px 6px 5px #00d3de;
+  border-bottom: 2px solid white;
   width: 100%;
   text-align: center;
-  border-radius: 50%;
+  border-radius: 3px;
   padding: 0.2rem;
 }
 
@@ -243,16 +274,14 @@ li a span {
   justify-content: space-evenly;
   gap: 0.5rem;
   padding: 0.5rem;
-  box-shadow: 0px -6px 5px #00d3de;
+  border-top: 1px solid white;
   width: 100%;
-  border-radius: 50%;
 }
 
 .card-links a {
   color: #030303;
-  box-shadow: 2px 2px 10px #308c91;
-  border-bottom: 1px solid #1fb3bb;
-  border-right: 1px solid #1fb3bb;
+  box-shadow: 0px 0px 5px white;
+  background-color: #1fb3bb;
   padding: 0.3rem;
   border-radius: 5px;
 }
@@ -260,27 +289,33 @@ li a span {
 /* section main contact */
 
 #contact {
-  position: relative;
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  padding-left: 1rem;
-  margin-bottom: 8rem;
+  margin-bottom: 5rem;
+  width: 90%;
+  margin: auto;
+
+  background-color: #2b3333;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px white;
 }
 
 #contact p {
-  font-size: 1.1rem;
+  font-size: clamp(1rem, 1.5rem, 2rem);
   color: #00d3de;
-  font-weight: 200;
+  width: 90%;
+  margin: auto;
+  font-weight: 700;
   line-height: 1.7rem;
   text-align: center;
 }
 
 .contact-card-list {
-  display: flex;
-  gap: 1rem;
-  flex-direction: column;
-  width: 70dvw;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  width: 90%;
   margin: auto;
   padding: 0.5rem;
 }
@@ -295,14 +330,8 @@ li a span {
   gap: 2rem;
   border-radius: 5px;
 
-  background: #283b3c;
-  background: linear-gradient(
-    32deg,
-    rgba(40, 59, 60, 1) 20%,
-    rgba(51, 99, 102, 1) 50%,
-    rgba(48, 140, 145, 1) 75%,
-    rgba(31, 179, 187, 1) 100%
-  );
+  background-color: #1fb3bb;
+  box-shadow: 0px 0px 5px white;
 }
 
 .card-contact div {
@@ -327,7 +356,7 @@ li a span {
   height: auto;
   background: white;
   border-radius: 100%;
-  box-shadow: 0 0 5px white;
+  box-shadow: 0 0 10px #283b3c;
 }
 
 .linkedin path {
@@ -347,6 +376,10 @@ footer {
     left: 50%;
     width: 45dvw;
     height: 7dvh;
+  }
+
+  .line-about-section {
+    transform: rotateY(360deg);
   }
 }
 
