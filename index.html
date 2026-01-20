@@ -1,123 +1,348 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Willian</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div class="banner"></div>
-        <nav class="header-navbar">
-            <ul>
-                <li><a href="#about">
-                    <img src="./assets/profile-nav-icon.svg" alt="icone de contato" width="25px">
-                    <span> Sobre</span>
-                </a></li>
-                <li><a href="#projects">
-                    <img src="./assets/project-nav-icon.svg" alt="icone de contato" width="25px">
-                   <span> Projetos </span>
-                </a></li>
-                <li><a href="#contact">
-                    <img src="./assets/contact-nav-icon.svg" alt="icone de contato" width="25px">
-                   <span> Contato</span></a></li>
-            </ul>
-        </nav>
+      <div class="banner"></div>
+      <nav class="header-navbar">
+        <ul>
+          <li>
+            <a href="#about">
+              <img
+                src="./assets/profile-nav-icon.svg"
+                alt="icone de contato"
+                width="25px"
+              />
+              <span> Sobre</span>
+            </a>
+          </li>
+          <li>
+            <a href="#projects">
+              <img
+                src="./assets/project-nav-icon.svg"
+                alt="icone de contato"
+                width="25px"
+              />
+              <span> Projetos </span>
+            </a>
+          </li>
+          <li>
+            <a href="#contact">
+              <img
+                src="./assets/contact-nav-icon.svg"
+                alt="icone de contato"
+                width="25px"
+              />
+              <span> Contato</span></a
+            >
+          </li>
+        </ul>
+      </nav>
     </header>
 
-<main>
-    
-    <section id="about">
-        <img class="profile-foto" src="./assets/profilePhoto.jpg" alt="Foto retrato" width="25%">
+    <main>
+      <section id="about">
+        <img
+          class="profile-foto"
+          src="./assets/profilePhoto.jpg"
+          alt="Foto retrato"
+          width="25%"
+        />
         <div class="about-text">
-            <p>Olá, eu me chamo Willian Alexsander, um rapaz que sempre amou tecnologia, mas não via uma opotunidade de viver essa tecnologia, até que um dia a vida deu um balanço e por conta resolvi arriscar o que era desconhecido, foi então que comecei a estudar ingles e atravez de roadmaps a aprender desenvolvimento web e tudo começou a fluir para que finalmente minha paixão em tecnologia tivesse vida em meu projetos que podera ver mais abaixo.</p>
+          <p>
+            Olá, eu me chamo Willian Alexsander, um rapaz que sempre amou
+            tecnologia, mas não via uma opotunidade de viver essa tecnologia,
+            até que um dia a vida deu um balanço e por conta resolvi arriscar o
+            que era desconhecido, foi então que comecei a estudar ingles e
+            atravez de roadmaps a aprender desenvolvimento web e tudo começou a
+            fluir para que finalmente minha paixão em tecnologia tivesse vida em
+            meu projetos que podera ver mais abaixo.
+          </p>
         </div>
         <div class="line-about-section"></div>
         <div class="about-skills">
-            <div class="tech-skills">
+          <div class="tech-skills">
             <h2>Tech-skills</h2>
             <ul>
-                <li><img src="./assets/react-icon.svg" alt="Icone react" width="50px"><p>React</p></li>
-                <li><img src="./assets/tailwind-icon.svg" alt="Icone tailwaind" width="50px"><p>Tailwaind</p></li>
-                <li><img src="./assets/api-icon.svg" alt="Icone api" width="50px"><p>API</p></li>
-                <li><img src="./assets/database-icon.svg" alt="Icone banco de dados" width="50px"><p>Banco de dados</p></li>
-                <li><img src="./assets/express-icon.svg" alt="Icone express" width="50px"><p>Express</p></li>
+              <li>
+                <img
+                  src="./assets/react-icon.svg"
+                  alt="Icone react"
+                  width="50px"
+                />
+                <p>React</p>
+              </li>
+              <li>
+                <img
+                  src="./assets/tailwind-icon.svg"
+                  alt="Icone tailwaind"
+                  width="50px"
+                />
+                <p>Tailwaind</p>
+              </li>
+              <li>
+                <img src="./assets/api-icon.svg" alt="Icone api" width="50px" />
+                <p>API</p>
+              </li>
+              <li>
+                <img
+                  src="./assets/database-icon.svg"
+                  alt="Icone banco de dados"
+                  width="50px"
+                />
+                <p>Banco de dados</p>
+              </li>
+              <li>
+                <img
+                  src="./assets/express-icon.svg"
+                  alt="Icone express"
+                  width="50px"
+                />
+                <p>Express</p>
+              </li>
             </ul>
-            </div>
-            <div class="soft-skills">
-                <h2>Soft-skils</h2>
-                <ul>
-                    <li>Cominicativo</li>
-                    <li>Cooperativo</li>
-                    <li>Proativo</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-    
-    <section id="projects">
-        <h2>Projetos</h2>
-        <div class="line-project-section"></div>
-        <ul>
-            <li>
-                <div class="card-project">
-                    <img class="card-thumb" src="" alt="capa do projeto">
-                    <h3 class="card-title">Titulo do projeto</h3>
-                    <p class="card-description">Breve descrição do projeto</p>
-                    <div class="card-links">
-                        <a>Preview</a>
-                        <a>Codigo</a>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="card-project">
-                    <img class="card-thumb" src="" alt="capa do projeto">
-                    <h3 class="card-title">Titulo do projeto</h3>
-                    <p class="card-description">Breve descrição do projeto</p>
-                    <div class="card-links">
-                        <a>Preview</a>
-                        <a>Codigo</a>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="card-project">
-                    <img class="card-thumb" src="" alt="capa do projeto">
-                    <h3 class="card-title">Titulo do projeto</h3>
-                    <p class="card-description">Breve descrição do projeto</p>
-                    <div class="card-links">
-                        <a>Preview</a>
-                        <a>Codigo</a>
-                    </div>
-                </div>
-            </li>
-        </ul>
-    </section>
-
-    <section id="contact">
-        <h2>Contatos</h2>
-        <div class="line-contact-section"></div>
-        <p>Gostaria de uma oportunidade de acrescentar a sua equipe e mostar minhas habilidades em solução de problemas</p>
-        <div>      
-           <ul>
-                <li>Linkedin</li>
-                <li>GitHub</li>
-                <li>Emai</li>
+          </div>
+          <div class="soft-skills">
+            <h2>Soft-skils</h2>
+            <ul>
+              <li>Cominicativo</li>
+              <li>Cooperativo</li>
+              <li>Proativo</li>
             </ul>
+          </div>
         </div>
-    </section>
-    <footer>
-        <p>Mensagem de coopright</p>
+      </section>
+
+      <section id="projects">
+        <div class="projects-header">
+          <h2>Projetos</h2>
+          <div class="line-project-section"></div>
+        </div>
+        <ul>
+          <li>
+            <div class="card-project">
+              <img class="card-thumb" src="" alt="capa do projeto" />
+              <h3 class="card-title">Titulo do projeto</h3>
+              <p class="card-description">Breve descrição do projeto</p>
+              <div class="card-links">
+                <a href="#">Preview <span class="new-tab">[ ↸_]</span></a>
+                <a href="#">Codigo <span class="new-tab">{ ↸_}</span></a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="card-project">
+              <img class="card-thumb" src="" alt="capa do projeto" />
+              <h3 class="card-title">Titulo do projeto</h3>
+              <p class="card-description">Breve descrição do projeto</p>
+              <div class="card-links">
+                <a href="#">Preview <span class="new-tab">[ ↸_]</span></a>
+                <a href="#">Codigo <span class="new-tab">{ ↸_}</span></a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="card-project">
+              <img class="card-thumb" src="" alt="capa do projeto" />
+              <h3 class="card-title">Titulo do projeto</h3>
+              <p class="card-description">Breve descrição do projeto</p>
+              <div class="card-links">
+                <a href="#">Preview <span class="new-tab">[ ↸_]</span></a>
+                <a href="#">Codigo <span class="new-tab">{ ↸_}</span></a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section id="contact">
+        <div class="projects-header">
+          <h2>Contatos</h2>
+          <div class="line-contact-section"></div>
+        </div>
+        <p>
+          Gostaria de uma oportunidade de acrescentar a sua equipe e mostar
+          minhas habilidades em solução de problemas
+        </p>
+        <ul class="contact-card-list">
+          <li>
+            <a href="#">
+              <div class="card-contact">
+                <svg
+                  class="linkedin"
+                  width="40px"
+                  height="40px"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M18.72 3.99997H5.37C5.19793 3.99191 5.02595 4.01786 4.86392 4.07635C4.70189 4.13484 4.55299 4.22471 4.42573 4.34081C4.29848 4.45692 4.19537 4.59699 4.12232 4.75299C4.04927 4.909 4.0077 5.07788 4 5.24997V18.63C4.01008 18.9901 4.15766 19.3328 4.41243 19.5875C4.6672 19.8423 5.00984 19.9899 5.37 20H18.72C19.0701 19.9844 19.4002 19.8322 19.6395 19.5761C19.8788 19.32 20.0082 18.9804 20 18.63V5.24997C20.0029 5.08247 19.9715 4.91616 19.9078 4.76122C19.8441 4.60629 19.7494 4.466 19.6295 4.34895C19.5097 4.23191 19.3672 4.14059 19.2108 4.08058C19.0544 4.02057 18.8874 3.99314 18.72 3.99997ZM9 17.34H6.67V10.21H9V17.34ZM7.89 9.12997C7.72741 9.13564 7.5654 9.10762 7.41416 9.04768C7.26291 8.98774 7.12569 8.89717 7.01113 8.78166C6.89656 8.66615 6.80711 8.5282 6.74841 8.37647C6.6897 8.22474 6.66301 8.06251 6.67 7.89997C6.66281 7.73567 6.69004 7.57169 6.74995 7.41854C6.80986 7.26538 6.90112 7.12644 7.01787 7.01063C7.13463 6.89481 7.2743 6.80468 7.42793 6.74602C7.58157 6.68735 7.74577 6.66145 7.91 6.66997C8.07259 6.66431 8.2346 6.69232 8.38584 6.75226C8.53709 6.8122 8.67431 6.90277 8.78887 7.01828C8.90344 7.13379 8.99289 7.27174 9.05159 7.42347C9.1103 7.5752 9.13699 7.73743 9.13 7.89997C9.13719 8.06427 9.10996 8.22825 9.05005 8.3814C8.99014 8.53456 8.89888 8.6735 8.78213 8.78931C8.66537 8.90513 8.5257 8.99526 8.37207 9.05392C8.21843 9.11259 8.05423 9.13849 7.89 9.12997ZM17.34 17.34H15V13.44C15 12.51 14.67 11.87 13.84 11.87C13.5822 11.8722 13.3313 11.9541 13.1219 12.1045C12.9124 12.2549 12.7546 12.4664 12.67 12.71C12.605 12.8926 12.5778 13.0865 12.59 13.28V17.34H10.29V10.21H12.59V11.21C12.7945 10.8343 13.0988 10.5225 13.4694 10.3089C13.84 10.0954 14.2624 9.98848 14.69 9.99997C16.2 9.99997 17.34 11 17.34 13.13V17.34Z"
+                    fill="#000000"
+                  />
+                </svg>
+                <div>
+                  <span>LinkedIn</span>
+                  <span>Criar uma conexao</span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="card-contact">
+                <svg
+                  class="github"
+                  width="40px"
+                  height="40px"
+                  viewBox="0 0 20 20"
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <title>github [#142]</title>
+                  <desc>Created with Sketch.</desc>
+                  <defs></defs>
+                  <g
+                    stroke="none"
+                    stroke-width="1"
+                    fill="none"
+                    fill-rule="evenodd"
+                  >
+                    <g
+                      id="Dribbble-Light-Preview"
+                      transform="translate(-140.000000, -7559.000000)"
+                      fill="#000000"
+                    >
+                      <g
+                        id="icons"
+                        transform="translate(56.000000, 160.000000)"
+                      >
+                        <path
+                          d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399"
+                          id="github-[#142]"
+                        ></path>
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+                <div>
+                  <span>GitHub</span>
+                  <span>Meus projetos</span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="card-contact">
+                <svg
+                  class="gmail"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-label="Gmail"
+                  role="img"
+                  viewBox="0 0 512 512"
+                >
+                  <rect width="512" height="512" rx="15%" fill="#ffffff" />
+                  <path
+                    d="M158 391v-142l-82-63V361q0 30 30 30"
+                    fill="#4285f4"
+                  />
+                  <path
+                    d="M 154 248l102 77l102-77v-98l-102 77l-102-77"
+                    fill="#ea4335"
+                  />
+                  <path d="M354 391v-142l82-63V361q0 30-30 30" fill="#34a853" />
+                  <path
+                    d="M76 188l82 63v-98l-30-23c-27-21-52 0-52 26"
+                    fill="#c5221f"
+                  />
+                  <path
+                    d="M436 188l-82 63v-98l30-23c27-21 52 0 52 26"
+                    fill="#fbbc04"
+                  />
+                </svg>
+                <div>
+                  <span>Email</span>
+                  <span>Uma proposta</span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="card-contact">
+                <svg
+                  class="whatsapp"
+                  width="40px"
+                  height="40px"
+                  viewBox="0 0 32 32"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M16 31C23.732 31 30 24.732 30 17C30 9.26801 23.732 3 16 3C8.26801 3 2 9.26801 2 17C2 19.5109 2.661 21.8674 3.81847 23.905L2 31L9.31486 29.3038C11.3014 30.3854 13.5789 31 16 31ZM16 28.8462C22.5425 28.8462 27.8462 23.5425 27.8462 17C27.8462 10.4576 22.5425 5.15385 16 5.15385C9.45755 5.15385 4.15385 10.4576 4.15385 17C4.15385 19.5261 4.9445 21.8675 6.29184 23.7902L5.23077 27.7692L9.27993 26.7569C11.1894 28.0746 13.5046 28.8462 16 28.8462Z"
+                    fill="#BFC8D0"
+                  />
+                  <path
+                    d="M28 16C28 22.6274 22.6274 28 16 28C13.4722 28 11.1269 27.2184 9.19266 25.8837L5.09091 26.9091L6.16576 22.8784C4.80092 20.9307 4 18.5589 4 16C4 9.37258 9.37258 4 16 4C22.6274 4 28 9.37258 28 16Z"
+                    fill="url(#paint0_linear_87_7264)"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M16 30C23.732 30 30 23.732 30 16C30 8.26801 23.732 2 16 2C8.26801 2 2 8.26801 2 16C2 18.5109 2.661 20.8674 3.81847 22.905L2 30L9.31486 28.3038C11.3014 29.3854 13.5789 30 16 30ZM16 27.8462C22.5425 27.8462 27.8462 22.5425 27.8462 16C27.8462 9.45755 22.5425 4.15385 16 4.15385C9.45755 4.15385 4.15385 9.45755 4.15385 16C4.15385 18.5261 4.9445 20.8675 6.29184 22.7902L5.23077 26.7692L9.27993 25.7569C11.1894 27.0746 13.5046 27.8462 16 27.8462Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M12.5 9.49989C12.1672 8.83131 11.6565 8.8905 11.1407 8.8905C10.2188 8.8905 8.78125 9.99478 8.78125 12.05C8.78125 13.7343 9.52345 15.578 12.0244 18.3361C14.438 20.9979 17.6094 22.3748 20.2422 22.3279C22.875 22.2811 23.4167 20.0154 23.4167 19.2503C23.4167 18.9112 23.2062 18.742 23.0613 18.696C22.1641 18.2654 20.5093 17.4631 20.1328 17.3124C19.7563 17.1617 19.5597 17.3656 19.4375 17.4765C19.0961 17.8018 18.4193 18.7608 18.1875 18.9765C17.9558 19.1922 17.6103 19.083 17.4665 19.0015C16.9374 18.7892 15.5029 18.1511 14.3595 17.0426C12.9453 15.6718 12.8623 15.2001 12.5959 14.7803C12.3828 14.4444 12.5392 14.2384 12.6172 14.1483C12.9219 13.7968 13.3426 13.254 13.5313 12.9843C13.7199 12.7145 13.5702 12.305 13.4803 12.05C13.0938 10.953 12.7663 10.0347 12.5 9.49989Z"
+                    fill="white"
+                  />
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_87_7264"
+                      x1="26.5"
+                      y1="7"
+                      x2="4"
+                      y2="28"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#5BD066" />
+                      <stop offset="1" stop-color="#27B43E" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+                <div>
+                  <span>WhatsApp</span>
+                  <span>Uma oportunidade</span>
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <footer>
+        <p>Ainda em desenvolvimento</p>
 
         <ul>
-            <li>Links em potencial aqui</li>
+          <li>Ainda em desenvolvimento</li>
         </ul>
-    </footer>
-</main>
+      </footer>
+    </main>
 
-    
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

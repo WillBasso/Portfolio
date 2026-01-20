@@ -89,3 +89,14 @@ https://www.svgrepo.com/svg/147094/api
 .Second-color-theme-4-hsla { color: hsla(142, 100, 45, 1); }
 .Second-color-theme-5-hsla { color: hsla(220, 100, 45, 1); }
 .Second-color-theme-6-hsla { color: hsla(183, 75, 60, 1); }
+
+
+icons to get for contacts section 
+
+https://www.svgrepo.com/svg/506517/linkedin
+
+https://www.svgrepo.com/svg/512317/github-142
+
+https://www.svgrepo.com/svg/488179/email
+
+https://www.svgrepo.com/svg/513060/whatsapp-128
